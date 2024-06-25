@@ -4,7 +4,7 @@ const modelsEmbed = new EmbedBuilder()
 	.setColor(0xea90db)
 	.setTitle('Free Models!')
 	.addFields(
-		{ name: 'Nardoragon [PC]', value: 'https://c4.kemono.su/data/de/9a/de9accc75ba099078e73d6214f081e86c95388bd319b13c63376ce757671b0b0.gz?f=5%20Fingers%20PC%20V2.1.unitypackage' },
+		{ name: 'Nardoragon [CUIDADO, SITE 18+]', value: 'https://c4.kemono.su/data/de/9a/de9accc75ba099078e73d6214f081e86c95388bd319b13c63376ce757671b0b0.gz?f=5%20Fingers%20PC%20V2.1.unitypackage' },
 		{ name: '\u200B', value: '\u200B' },
 		{ name: 'Wickerbeast', value: 'https://vrmodels.store/avatars/39341-kurais-female-wickerbeast-avatar.html', inline: true },
         { name: '\u200B', value: '\u200B' },
