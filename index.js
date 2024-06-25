@@ -1,11 +1,12 @@
 //Ferramentas
 const {Client, Events, GatewayIntentBits, Collection } = require('discord.js');
 const dotenv = require('dotenv');
-    const client = new Client({intents: [GatewayIntentBits.Guilds] })
+const client = new Client({intents: [GatewayIntentBits.Guilds] })
 dotenv.config()
 const { TOKEN } = process.env
 const fs = require("node:fs");
 const path = require("node:path");
+const keep_alive = require("./keep_alive");
 client.commands = new Collection()
 
 
