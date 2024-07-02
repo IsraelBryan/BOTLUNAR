@@ -1,60 +1,21 @@
-const {SlashCommandBuilder, EmbedBuilder, MessageEmbed} = require('discord.js');
+const {SlashCommandBuilder, EmbedBuilder} = require('discord.js');
 
 
-const Embedih = new EmbedBuilder()
-	.setColor(0x0099FF)
-	.setTitle('Collar-Wicker')
-	.setURL('https://discord.js.org/')
-	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
-	.addFields({ name: 'Inline field title', value: 'Some value here', inline: true })
-	.setImage('https://i.imgur.com/AfFp7pu.png')
-	.setFooter({ text: 'Some footer text here', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
+const accessEmbed = new EmbedBuilder()
+	.setColor(0x0046FF)
+	.setTitle('Wickerbeast accessories')
+	.setURL('https://www.vrcarena.com/accessorize/ICd2dre4zzhIyaHR7PZx')
+	.setDescription('Wickerbeast accessories PAID/FREE')
+	.setThumbnail('https://bauwhmtbztaunmwfgaqi.supabase.co/storage/v1/object/public/asset-thumbnails/1634317926479/8e257237-829e-42ce-a857-32ffd8b9f087.webp')
+	.addFields({ name: 'Prices:', value: '10 USD to 35 USD or more.', inline: true })
+	.setImage('https://bauwhmtbztaunmwfgaqi.supabase.co/storage/v1/object/public/asset-thumbnails/1634317926479/8e257237-829e-42ce-a857-32ffd8b9f087.webp')
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("collar")
-    .setDescription("custom collars to your avatar!"),
+    .setName("wickerbeast-access")
+    .setDescription("wickerbeast accessories"),
 
     async execute(interaction) {
-		const accessEmbed = new EmbedBuilder()
-		.setColor(0x0099FF)
-		.setTitle('Collar-Wicker')
-		.setURL('https://discord.js.org/')
-		.setDescription('Some description here')
-		.setThumbnail('https://i.imgur.com/AfFp7pu.png')
-		.addFields({ name: 'Inline field title', value: 'Some value here', inline: true })
-		.setImage('https://i.imgur.com/AfFp7pu.png')
-		.setFooter({ text: 'Some footer text here', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
-
-			//Embed inicial
-			const InitialEmbed = await interaction.reply({embeds : [accessEmbed]})
-
-			//Adicionando reações
-			await InitialEmbed.react('⬅️');
-			await InitialEmbed.react('➡️');
-
-			//Filtro das reações
-			const filter = (reaction, user) => {
-				return ['⬅️', '➡️'].includes(reaction.emoji.name) && user.id === interaction.user.id;
-			}
-
-			//Coletor
-			const collector =InitialEmbed.createReactionCollector({ filter, time: 60000});
-
-			collector.on('collect', async (reaction) => {
-				if(reaction.emoji.name === '⬅️'){
-					accessEmbed.setDescription('Old');
-					await InitialEmbed.edit({embeds : [Embedih] });
-
-				} else if(reaction.emoji.name === '➡️'){
-					accessEmbed.setDescription('New');
-					await InitialEmbed.edit({embeds : [accessEmbed] });
-				}
-			});
-
-			collector.on('end', collected => {
-				console.log(`Foram coletados ${collected.size} reações.`)
-			});
+        await interaction.reply({embeds: [accessEmbed]})
     }
 }
