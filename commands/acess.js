@@ -1,7 +1,7 @@
 const {SlashCommandBuilder, EmbedBuilder, MessageEmbed} = require('discord.js');
 
 
-const accessEmbed = new EmbedBuilder()
+const Embedih = new EmbedBuilder()
 	.setColor(0x0099FF)
 	.setTitle('Collar-Wicker')
 	.setURL('https://discord.js.org/')
@@ -45,7 +45,7 @@ module.exports = {
 			collector.on('collect', async (reaction) => {
 				if(reaction.emoji.name === '⬅️'){
 					accessEmbed.setDescription('Old');
-					await InitialEmbed.edit({embeds : [accessEmbed] });
+					await InitialEmbed.edit({embeds : [Embedih] });
 
 				} else if(reaction.emoji.name === '➡️'){
 					accessEmbed.setDescription('New');
