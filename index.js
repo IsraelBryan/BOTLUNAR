@@ -34,7 +34,12 @@ client.once(Events.ClientReady, c => {
 client.login(TOKEN);
 
 client.on(Events.InteractionCreate, async interaction => {
-    
+    if (interaction.isStringSelectMenu()){
+        const selected = interaction.values[0]
+        if (selected == "nardoragon"){
+            await interaction.reply("awawawa");
+        }
+    }
     if(!interaction.isChatInputCommand()) return
     const command = interaction.client.commands.get(interaction.commandName)
     if(!command){
