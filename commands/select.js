@@ -9,7 +9,11 @@ const select = new ActionRowBuilder()
                 label: "nardoragon",
                 description: "Veja todas as categorias associadas para Nardoragon.",
                 value: "nardoragon"
-
+            })
+            .addOptions ({
+                label: "wickerbeast",
+                description: "Veja todas as categorias associadas para Wickerbeast",
+                value: "wickerbeast"
             })
     )
 
