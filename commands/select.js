@@ -7,12 +7,12 @@ const select = new ActionRowBuilder()
             .setPlaceholder("Nenhum tópico selecionado")
             .addOptions({
                 label: "nardoragon",
-                description: "Veja todas as categorias associadas para Nardoragon.",
+                description: "Nardoragon model download",
                 value: "nardoragon"
             })
             .addOptions ({
                 label: "wickerbeast",
-                description: "Veja todas as categorias associadas para Wickerbeast",
+                description: "Wickerbeast model download",
                 value: "wickerbeast"
             })
     )
