@@ -37,7 +37,7 @@ client.on(Events.InteractionCreate, async interaction => {
     if (interaction.isStringSelectMenu()) {
         const selected = interaction.values[0]
         if (selected == "nardoragon") {
-            await interaction.reply("Download Model: https://c4.kemono.su/data/de/9a/de9accc75ba099078e73d6214f081e86c95388bd319b13c63376ce757671b0b0.gz?f=5%20Fingers%20PC%20V2.1.unitypackage ")
+            await interaction.reply("Download Model: https://vrchive.nomieze.com/item/?assetId=65b3c4a7ebf077debfd5d580 ")
         }
     }
     if (!interaction.isChatInputCommand()) return
