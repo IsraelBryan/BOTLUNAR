@@ -43,7 +43,7 @@ client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isChatInputCommand()) return
     const command = interaction.client.commands.get(interaction.commandName)
     if (!command) {
-        console.error("Comandinho não foi achado eiiin~")
+        console.error("Comandinho não foi achado eiiin")
         return
     }
     try {
