@@ -51,20 +51,18 @@ client.on(Events.InteractionCreate, async interaction => {
         } else if (selected == "mamehinata"){
             await interaction.reply("Model: na procura!!!")
         }
-
+    }
+    if (!interaction.isChatInputCommand()) return
+    const command = interaction.client.commands.get(interaction.commandName)
+    if (!command) {
+        console.error("Comandinho não foi achado eiiin")
+        return
+    }
+    try {
+        await command.execute(interaction)
+    } catch (error) {
+        console.error(error)
+        await interaction.reply("Houve um errinho da nossa parte (vulgo UMB)")
     }
 
-        if (!interaction.isChatInputCommand()) return
-        const command = interaction.client.commands.get(interaction.commandName)
-        if (!command) {
-            console.error("Comandinho não foi achado eiiin")
-            return
-        }
-        try {
-            await command.execute(interaction)
-        } catch (error) {
-            console.error(error)
-            await interaction.reply("Houve um errinho da nossa parte (vulgo UMB)")
-        }
-
-    })
+})

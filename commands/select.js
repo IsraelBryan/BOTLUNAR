@@ -41,7 +41,7 @@ const select = new ActionRowBuilder()
                 value: "chibi_novabeast"
             })
             .addOptions({
-                value: "mamehinata",
+                label: "mamehinata",
                 description: "Mamehinata V1.53 model download",
                 value: "mamehinata"
             })
