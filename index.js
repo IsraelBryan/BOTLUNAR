@@ -37,7 +37,7 @@ client.on(Events.InteractionCreate, async interaction => {
     if (interaction.isStringSelectMenu()) {
         const selected = interaction.values[0]
         if (selected == "nardoragon") {
-            await interaction.reply("Download Model: https://vrchive.nomieze.com/item/?assetId=65b3c4a7ebf077debfd5d580 ")
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=65b3c4a7ebf077debfd5d580 ")
         }
     }
     if (!interaction.isChatInputCommand()) return
