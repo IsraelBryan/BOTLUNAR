@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 
 const accessEmbed = new EmbedBuilder()
-	.setColor(0x0046FF)
+	.setColor(0x0046AA)
 	.setTitle('Clothes!')
 	.setURL('https://vrchive.nomieze.com/clothes/')
 	.setDescription('Clothes for different type of avatars!')
