@@ -8,20 +8,20 @@ const exampleEmbed = new EmbedBuilder()
 		{ name: '\u200B', value: '\u200B' },
 		{ name: 'VRCHAT', value: 'https://docs.vrchat.com/docs/latest-release', inline: true },
 		{ name: '\u200B', value: '\u200B' },
-		{ name: 'VRModels', value: 'https://vrmodels.store/ [FREE]'},
+		{ name: 'VRModels', value: 'https://vrmodels.store/ [FREE]' },
 		{ name: '\u200B', value: '\u200B' },
-		{ name: 'BOOTH', value: 'https://booth.pm/ja/search/VRChat [PAID]'},
+		{ name: 'BOOTH', value: 'https://booth.pm/ja/search/VRChat [PAID]' },
 		{ name: '\u200B', value: '\u200B' },
-		{ name: 'VRCArena', value: 'https://www.vrcarena.com [PAID/FREE]'},
+		{ name: 'VRCArena', value: 'https://www.vrcarena.com [PAID/FREE]' },
 	)
 
 
 module.exports = {
-    data: new SlashCommandBuilder()
-    .setName("atualizações")
-    .setDescription("Demonstra atualizações de plataformas"),
+	data: new SlashCommandBuilder()
+		.setName("atualizações")
+		.setDescription("Demonstra atualizações de plataformas"),
 
-    async execute(interaction) {
-        await interaction.reply({embeds: [exampleEmbed]})
-    }
+	async execute(interaction) {
+		await interaction.reply({ embeds: [exampleEmbed] })
+	}
 }

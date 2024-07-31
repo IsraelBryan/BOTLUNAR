@@ -1,4 +1,4 @@
-const {SlashCommandBuilder, EmbedBuilder} = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 
 const accessEmbed = new EmbedBuilder()
@@ -11,11 +11,11 @@ const accessEmbed = new EmbedBuilder()
 	.setImage('https://bauwhmtbztaunmwfgaqi.supabase.co/storage/v1/object/public/asset-thumbnails/1634317926479/8e257237-829e-42ce-a857-32ffd8b9f087.webp')
 
 module.exports = {
-    data: new SlashCommandBuilder()
-    .setName("wickerbeast-access")
-    .setDescription("wickerbeast accessories"),
+	data: new SlashCommandBuilder()
+		.setName("wickerbeast-access")
+		.setDescription("wickerbeast accessories"),
 
-    async execute(interaction) {
-        await interaction.reply({embeds: [accessEmbed]})
-    }
+	async execute(interaction) {
+		await interaction.reply({ embeds: [accessEmbed] })
+	}
 }

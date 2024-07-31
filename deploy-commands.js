@@ -1,4 +1,4 @@
-const {REST, Routes} = require("discord.js")
+const { REST, Routes } = require("discord.js")
 
 //DOTENV
 const dotenv = require('dotenv');
@@ -14,26 +14,26 @@ console.log(commandFiles)
 
 const commands = []
 
-for(const file of commandFiles) {
+for (const file of commandFiles) {
     const command = require(`./commands/${file}`)
     commands.push(command.data.toJSON())
 }
 
 //REST
-const rest = new REST({version: "10"}).setToken(TOKEN);
+const rest = new REST({ version: "10" }).setToken(TOKEN);
 
 //DEPLOY
 
 (async () => {
     try {
-        console.log(`Resetando ${commands.length} comandinhos...~`)
+        console.log(`Resetando ${commands.length} comandinhos`)
 
         const data = await rest.put(
             Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID),
-            {body: commands}
+            { body: commands }
         )
         console.log("Comandos registradinhos~")
-    } catch(error) {
+    } catch (error) {
         console.error(error)
     }
 })()
