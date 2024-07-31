@@ -26,7 +26,7 @@ const rest = new REST({version: "10"}).setToken(TOKEN);
 
 (async () => {
     try {
-        console.log(`Resetando ${commands.length} comandinhos...~`)
+        console.log(`Resetando ${commands.length} comandinhos`)
 
         const data = await rest.put(
             Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID),

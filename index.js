@@ -23,7 +23,7 @@ for (const file of commandFiles) {
     if ("data" in command && "execute" in command) {
         client.commands.set(command.data.name, command)
     } else {
-        console.log(`Isso aqui ${filePath} esta com "data" ou "execute" bombadinhuh`)
+        console.log(`Isso aqui ${filePath} esta com "data" ou "execute" bombado`)
     }
 }
 
@@ -50,7 +50,7 @@ client.on(Events.InteractionCreate, async interaction => {
         await command.execute(interaction)
     } catch (error){
         console.error(error)
-        await interaction.reply("Houve um errinho da nossa parte~ (vulgo UMB)")
+        await interaction.reply("Houve um errinho da nossa parte (vulgo UMB)")
     }
       
 })
