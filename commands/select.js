@@ -10,19 +10,19 @@ const select = new ActionRowBuilder()
                 description: "Nardoragon model download",
                 value: "nardoragon"
             })
-            .addOptions ({
+            .addOptions({
                 label: "wickerbeast",
                 description: "Wickerbeast model download",
                 value: "wickerbeast"
             })
     )
 
-    module.exports = {
-        data: new SlashCommandBuilder()
+module.exports = {
+    data: new SlashCommandBuilder()
         .setName("select")
         .setDescription("selecione categorias!"),
-    
-        async execute(interaction) {
-            await interaction.reply({contents: "Selecione uma dessas categorias: ", components: [select]})
-        }
+
+    async execute(interaction) {
+        await interaction.reply({ contents: "Selecione uma dessas categorias: ", components: [select] })
     }
+}
