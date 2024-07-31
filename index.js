@@ -38,19 +38,33 @@ client.on(Events.InteractionCreate, async interaction => {
         const selected = interaction.values[0]
         if (selected == "nardoragon") {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=65b3c4a7ebf077debfd5d580 ")
+        } else if (selected == "deira") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=64f43d663a29375dd846903e ")
+        } else if (selected == "rindo") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/redirect/?downloadId=64f43d673a29375dd8469582 ")
+        } else if (selected == "karin") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=64f43d673a29375dd84695db ")
+        } else if (selected == "kikyo") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=64f43d673a29375dd846951c")
+        } else if (selected == "chibi_novabeast") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=66917c84b844c675ff34ade8")
+        } else if (selected == "mamehinata"){
+            await interaction.reply("Model: na procura!!!")
         }
-    }
-    if (!interaction.isChatInputCommand()) return
-    const command = interaction.client.commands.get(interaction.commandName)
-    if (!command) {
-        console.error("Comandinho não foi achado eiiin")
-        return
-    }
-    try {
-        await command.execute(interaction)
-    } catch (error) {
-        console.error(error)
-        await interaction.reply("Houve um errinho da nossa parte (vulgo UMB)")
+
     }
 
-})
+        if (!interaction.isChatInputCommand()) return
+        const command = interaction.client.commands.get(interaction.commandName)
+        if (!command) {
+            console.error("Comandinho não foi achado eiiin")
+            return
+        }
+        try {
+            await command.execute(interaction)
+        } catch (error) {
+            console.error(error)
+            await interaction.reply("Houve um errinho da nossa parte (vulgo UMB)")
+        }
+
+    })
