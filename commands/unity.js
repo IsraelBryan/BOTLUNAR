@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+            const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 const modelsEmbed = new EmbedBuilder()
     .setColor(0xea20db)
