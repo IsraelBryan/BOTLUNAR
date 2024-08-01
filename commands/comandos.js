@@ -22,6 +22,6 @@ module.exports = {
         .setDescription("Lista de comandos para lhe manter informado!"),
 
     async execute(interaction) {
-        await interaction.reply({embeds: [commandsEmbed]})
+        await interaction.reply({ embeds: [commandsEmbed] })
     }
 }
