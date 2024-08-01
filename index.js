@@ -48,10 +48,12 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=64f43d673a29375dd846951c")
         } else if (selected == "chibi_novabeast") {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=66917c84b844c675ff34ade8")
-        } else if (selected == "mamehinata"){
+        } else if (selected == "mamehinata") {
             await interaction.reply("Model: na procura!!!")
-        }else if (selected == "hyenid"){
+        } else if (selected == "hyenid") {
             await interaction.reply("Model: https://workupload.com/archive/KApnaXv56z")
+        } else if (selected == "rexouium") {
+            await interaction.reply("Model: https://drive.google.com/file/d/1fZWjUp_Q-p_G2yREGx0FPwqC_2U5-sbU/view")
         }
     }
     if (!interaction.isChatInputCommand()) return

@@ -50,6 +50,11 @@ const select = new ActionRowBuilder()
                 description: "Hyenid V1.16 model download",
                 value: "hyenid"
             })
+            .addOptions({
+                label: "rexouium",
+                description: "Rexouium Google Drive model download",
+                value: "rexouium"
+            })
     )
 
 module.exports = {
