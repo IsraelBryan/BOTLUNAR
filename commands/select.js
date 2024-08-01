@@ -20,7 +20,7 @@ const select = new ActionRowBuilder()
                 description:"Deira model download",
                 value: "deira"
             })
-            .addOptions({
+            .addOptions({                       
                 label: "rindo",
                 description: "Rindo model download",
                 value: "rindo"
