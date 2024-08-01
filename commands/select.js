@@ -45,6 +45,11 @@ const select = new ActionRowBuilder()
                 description: "Mamehinata V1.53 model download",
                 value: "mamehinata"
             })
+            .addOptions({
+                label: "hyenid",
+                description: "Hyenid V1.16 model download",
+                value: "hyenid"
+            })
     )
 
 module.exports = {

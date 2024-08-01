@@ -50,6 +50,8 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=66917c84b844c675ff34ade8")
         } else if (selected == "mamehinata"){
             await interaction.reply("Model: na procura!!!")
+        }else if (selected == "hyenid"){
+            await interaction.reply("Model: https://workupload.com/archive/KApnaXv56z")
         }
     }
     if (!interaction.isChatInputCommand()) return
