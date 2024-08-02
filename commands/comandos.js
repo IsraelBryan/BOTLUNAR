@@ -18,7 +18,7 @@ const commandsEmbed = new EmbedBuilder()
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("ping")
+        .setName("commands")
         .setDescription("Lista de comandos para lhe manter informado!"),
 
     async execute(interaction) {
