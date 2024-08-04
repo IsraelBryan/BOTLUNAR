@@ -4,7 +4,7 @@ const select = new ActionRowBuilder()
     .addComponents(
         new StringSelectMenuBuilder()
             .setCustomId("select")
-            .setPlaceholder("Nenhum tópico selecionado")
+            .setPlaceholder("Click here to select one model to download!")
             .addOptions({
                 label: "nardoragon",
                 description: "Nardoragon model download",
