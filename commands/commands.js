@@ -1,7 +1,7 @@
 const {SlashCommandBuilder, EmbedBuilder} = require("discord.js");
 
 const commandsEmbed = new EmbedBuilder()
-    .setColor(0xea190db)
+    .setColor(0xea10db)
     .setTitle("Commands!")
     .addFields(
         { name: 'Clothes', value: 'Lot of clothes for different types of avatars!' },
