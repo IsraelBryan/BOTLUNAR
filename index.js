@@ -30,7 +30,6 @@ for (const file of commandFiles) {
 
 client.once(Events.ClientReady, c => {
     console.log(`Logado como ${c.user.tag}`)
-    client.user.setGame(`Estou logado em ${client.guilds.size} servidores`)
 })
 
 client.on("guildCreate", guild => {
@@ -38,6 +37,7 @@ client.on("guildCreate", guild => {
 })
 
 client.login(TOKEN);
+client.login(config.token);
 
 client.on(Events.InteractionCreate, async interaction => {
     if (interaction.isStringSelectMenu()) {
