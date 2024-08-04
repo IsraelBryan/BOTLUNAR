@@ -12,7 +12,7 @@ const select = new ActionRowBuilder()
             })
             .addOptions({
                 label: "wickerbeast",
-                description: "Wickerbeast model download",
+                description: "Wickerbeast Google Drive download",
                 value: "wickerbeast"
             })
             .addOptions({

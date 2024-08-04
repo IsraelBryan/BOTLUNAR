@@ -46,14 +46,14 @@ const asyncMethod = async () => {
 
     // Method ignoring errors.
     const friendsArray = await vrchat.FriendsApi.ListFriends({ n: 100, offline: true }); // Get an Array of LimitedUser objects as documented on the Community-driven API Docs.
-    for(let i = 0; i < friendsArray.length; i++) {
-      console.log(friendsArray[i].displayName); // Log display names of all offline friends to console returned from the API function call above.
+    for (let i = 0; i < friendsArray.length; i++) {
+        console.log(friendsArray[i].displayName); // Log display names of all offline friends to console returned from the API function call above.
     }
 
     // Method catching & handling errors. (I recommend catching & handling your errors, otherwise you could run into catastrophic errors that break your applications at runtime)
     // Get an Array of LimitedUser objects as documented on the Community-driven API Docs and only log names if there was no error, otherwise log the error.
     await vrchat.FriendsApi.ListFriends({ n: 100, offline: true }).then(res => {
-        for(let i = 0; i < res.length; i++) {
+        for (let i = 0; i < res.length; i++) {
             console.log(res[i].displayName); // Log display names of all offline friends to console returned from the API function call above.
         }
     }).catch(err => console.log(err));
@@ -105,6 +105,7 @@ for (const file of commandFiles) {
 
 client.once(Events.ClientReady, c => {
     console.log(`Logado como ${c.user.tag}}`)
+    console.log(`O bot entrou nos servidores: ${Guild.name}, (id: ${Guild.id}), com uma população de ${Guild.member}}`)
 })
 
 
@@ -127,7 +128,7 @@ client.on(Events.InteractionCreate, async interaction => {
         } else if (selected == "chibi_novabeast") {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=66917c84b844c675ff34ade8")
         } else if (selected == "mamehinata") {
-            await interaction.reply("Model: na procura!!!")
+            await interaction.reply("Model: empty!!!")
         } else if (selected == "hyenid") {
             await interaction.reply("Model: https://workupload.com/archive/KApnaXv56z")
         } else if (selected == "rexouium") {
@@ -136,6 +137,8 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=666b689d0a3ae09105656570")
         } else if (selected == "vyllith") {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=6669dd3d92a88ea3dca06b4d")
+        } else if (selected == "wickerbeast") {
+            await interaction.reply("Model: https://drive.google.com/file/d/1WJ6Gp1kkrMkSjJCWzIML1TZ1jJKu_tFO/view")
         }
     }
     if (!interaction.isChatInputCommand()) return
