@@ -30,11 +30,9 @@ for (const file of commandFiles) {
 
 client.once(Events.ClientReady, c => {
     console.log(`Logado como ${c.user.tag}`)
-})
-
-client.on("guildCreate", guild => {
     console.log(`O bot entrou nos servidores: ${guild.name} (id: ${guild.id}). População de ${guild.memberCount} membros!`)
 })
+
 
 client.login(TOKEN);
 client.login(config.token);
