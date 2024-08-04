@@ -14,7 +14,9 @@ const { VRChat, Enums } = require('vrchat-api-library');
 //VRCHAT
 const { stdin, stdout } = require('process');
 const readline = require('readline');
-
+const vrchat_user = 'UMBFB'
+const vrchat_pass = 'umbreon_game23'
+const channel_id = '1007850093703069736'
 const vrchat = new VRChat();
 
 // Promise based console input function.

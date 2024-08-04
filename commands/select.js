@@ -70,7 +70,7 @@ const select = new ActionRowBuilder()
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("select")
-        .setDescription("selecione categorias para seu avatar"),
+        .setDescription("select models of avatars to download!"),
 
     async execute(interaction) {
         await interaction.reply({ contents: "Selecione uma dessas categorias: ", components: [select] })
