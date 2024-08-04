@@ -55,6 +55,16 @@ const select = new ActionRowBuilder()
                 description: "Rexouium Google Drive model download",
                 value: "rexouium"
             })
+            .addOptions({
+                label: "Kuuta",
+                description: "Kuuta V1.00 download",
+                value: "kuuta"
+            })
+            .addOptions({
+                label: "vyllith",
+                description: "Vyllith model download",
+                value: "vyllith"
+            })
     )
 
 module.exports = {

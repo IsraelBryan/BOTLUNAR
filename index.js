@@ -60,6 +60,10 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply("Model: https://workupload.com/archive/KApnaXv56z")
         } else if (selected == "rexouium") {
             await interaction.reply("Model: https://drive.google.com/file/d/1fZWjUp_Q-p_G2yREGx0FPwqC_2U5-sbU/view")
+        } else if (selected == "kuuta") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=666b689d0a3ae09105656570")
+        } else if (selected == "vyllith") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=6669dd3d92a88ea3dca06b4d")
         }
     }
     if (!interaction.isChatInputCommand()) return
