@@ -7,6 +7,7 @@ const { TOKEN } = process.env
 const fs = require("node:fs");
 const path = require("node:path");
 const keep_alive = require("./keep_alive");
+const config = require("./config.json");
 client.commands = new Collection()
 
 
@@ -29,6 +30,11 @@ for (const file of commandFiles) {
 
 client.once(Events.ClientReady, c => {
     console.log(`Logado como ${c.user.tag}`)
+    client.user.setGame(`Estou logado em ${client.guilds.size} servidores`)
+})
+
+client.on("guildCreate", guild => {
+    console.log(`O bot entrou nos servidores: ${guild.name} (id: ${guild.id}). População de ${guild.memberCount} membros!`)
 })
 
 client.login(TOKEN);
