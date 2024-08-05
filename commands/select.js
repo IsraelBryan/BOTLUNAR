@@ -75,6 +75,31 @@ const select = new ActionRowBuilder()
                 description: "Povichi V2 model download",
                 value: "povichi"
             })
+            .addOptions({
+                label: "fredina's_club",
+                description: "Fazclaire's Nightclub -- bundle model download",
+                value: "fredina's_club"
+            })
+            .addOptions({
+                label: "rin",
+                description: "Rin model download",
+                value: "rin"
+            })
+            .addOptions({
+                label: "akky",
+                description: "Akky model download",
+                value: "akky"
+            })
+            .addOptions({
+                label: "ku",
+                description: "Ku model download",
+                value: "ku"
+            })
+            .addOptions({
+                label: "haida",
+                description: "Haida model download",
+                value: "haida"
+            })
     )
 
 module.exports = {

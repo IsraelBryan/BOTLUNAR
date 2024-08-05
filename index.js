@@ -72,10 +72,20 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=6669dd3d92a88ea3dca06b4d")
         } else if (selected == "wickerbeast") {
             await interaction.reply("Model: https://drive.google.com/file/d/1WJ6Gp1kkrMkSjJCWzIML1TZ1jJKu_tFO/view")
-        } else if (selected == "deira_neo"){
+        } else if (selected == "deira_neo") {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=665cea4edf50facd45f6416b")
-        } else if (selected == "povichi"){
+        } else if (selected == "povichi") {
             await interaction.reply("Model: https://vrmodels.store/avatars/11495-povichi-v2.html")
+        } else if (selected == "fredina's club") {
+            await interaction.reply("Model: https://drive.google.com/file/d/1qUzqQBWjFCAf4oMWExanZX23RqHs89Pf/view")
+        } else if (selected == "ku") {
+            await interaction.reply("https://vrchive.nomieze.com/item/?assetId=64f43d663a29375dd846903b")
+        } else if (selected == "haida") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=64f43d663a29375dd8469038")
+        } else if (selected == "akky") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=64f43d663a29375dd846903d")
+        } else if (selected == "rin") {
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=662fce3312eccf561e2049fc")
         }
     }
     if (!interaction.isChatInputCommand()) return
