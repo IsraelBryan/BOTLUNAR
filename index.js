@@ -72,6 +72,10 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=6669dd3d92a88ea3dca06b4d")
         } else if (selected == "wickerbeast") {
             await interaction.reply("Model: https://drive.google.com/file/d/1WJ6Gp1kkrMkSjJCWzIML1TZ1jJKu_tFO/view")
+        } else if (selected == "deira_neo"){
+            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=665cea4edf50facd45f6416b")
+        } else if (selected == "povichi"){
+            await interaction.reply("Model: https://vrmodels.store/avatars/11495-povichi-v2.html")
         }
     }
     if (!interaction.isChatInputCommand()) return

@@ -65,6 +65,16 @@ const select = new ActionRowBuilder()
                 description: "Vyllith model download",
                 value: "vyllith"
             })
+            .addOptions({
+                label: "deira_neo",
+                description: "Deira Neo model download",
+                value: "deira_neo"
+            })
+            .addOptions({
+                label: "povichi",
+                description: "Povichi V2 model download",
+                value: "povichi"
+            })
     )
 
 module.exports = {
