@@ -39,6 +39,7 @@ client.once(Events.ClientReady, c => {
 client.login(TOKEN);
 client.login(config.token);
 
+//Inserindo as seleções
 client.on(Events.InteractionCreate, async interaction => {
     if (interaction.isStringSelectMenu()) {
         const selected = interaction.values[0]
