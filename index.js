@@ -44,33 +44,33 @@ client.on(Events.InteractionCreate, async interaction => {
     if (interaction.isStringSelectMenu()) {
         const selected = interaction.values[0]
         if (selected == "nardoragon") {
-            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=65b3c4a7ebf077debfd5d580 ")
+            await interaction.reply("Model:  ")
         } else if (selected == "deira") {
-            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=64f43d663a29375dd846903e ")
+            await interaction.reply("Model:  ")
         } else if (selected == "rindo") {
-            await interaction.reply("Model: https://vrchive.nomieze.com/redirect/?downloadId=64f43d673a29375dd8469582 ")
+            await interaction.reply("Model:  ")
         } else if (selected == "karin") {
-            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=64f43d673a29375dd84695db ")
+            await interaction.reply("Model:  ")
         } else if (selected == "kikyo") {
-            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=64f43d673a29375dd846951c")
+            await interaction.reply("Model: ")
         } else if (selected == "chibi_novabeast") {
-            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=66917c84b844c675ff34ade8")
+            await interaction.reply("Model: ")
         } else if (selected == "mamehinata") {
             await interaction.reply("Model: empty!!!")
         } else if (selected == "hyenid") {
-            await interaction.reply("Model: https://workupload.com/archive/KApnaXv56z")
+            await interaction.reply("Model: ")
         } else if (selected == "rexouium") {
-            await interaction.reply("Model: https://drive.google.com/file/d/1fZWjUp_Q-p_G2yREGx0FPwqC_2U5-sbU/view")
+            await interaction.reply("Model: ")
         } else if (selected == "kuuta") {
-            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=666b689d0a3ae09105656570")
+            await interaction.reply("Model: ")
         } else if (selected == "vyllith") {
-            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=6669dd3d92a88ea3dca06b4d")
+            await interaction.reply("Model:")
         } else if (selected == "wickerbeast") {
-            await interaction.reply("Model: https://drive.google.com/file/d/1WJ6Gp1kkrMkSjJCWzIML1TZ1jJKu_tFO/view")
+            await interaction.reply("Model: ")
         } else if (selected == "deira_neo"){
-            await interaction.reply("Model: https://vrchive.nomieze.com/item/?assetId=665cea4edf50facd45f6416b")
+            await interaction.reply("Model: ")
         } else if (selected == "povichi"){
-            await interaction.reply("Model: https://vrmodels.store/avatars/11495-povichi-v2.html")
+            await interaction.reply("Model: ")
         }
     }
     if (!interaction.isChatInputCommand()) return
