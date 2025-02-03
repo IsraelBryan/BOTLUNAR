@@ -1,4 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const vrc = require('../VRC');
 
 const exampleEmbed = new EmbedBuilder()
 	.setColor(0xea80db)
