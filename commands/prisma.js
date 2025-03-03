@@ -16,6 +16,6 @@ module.exports = {
     .setDescription("Prismic's avatar search now WEB!!"),
 
     async execute(interaction) {
-        await interaction.reply({ embed: [prisma] })
+        await interaction.reply({ embeds: [prisma] })
     }
 }
