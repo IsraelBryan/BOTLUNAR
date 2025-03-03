@@ -7,7 +7,6 @@ const { TOKEN } = process.env
 const fs = require("node:fs");
 const path = require("node:path");
 const keep_alive = require("./keep_alive");
-const vrc = require('./VRC');
 const config = require("./config.json");
 client.commands = new Collection()
 const { GUILD_ID } = process.env;
@@ -30,12 +29,7 @@ for (const file of commandFiles) {
     }
 }
 
-
-
-
 client.login(TOKEN);
-client.login(config.token);
-
 client.on(Events.InteractionCreate, async interaction => {
     if (!interaction.isChatInputCommand()) return
     const command = interaction.client.commands.get(interaction.commandName)

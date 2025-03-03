@@ -1,5 +1,5 @@
 const {SlashCommandBuilder, EmbedBuilder } = require('discord.js');
-const { execute } = require('./clothes');
+
 
 const prisma = new EmbedBuilder()
 .setTitle("Prismic!")
