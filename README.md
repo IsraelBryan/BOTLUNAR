@@ -15,8 +15,8 @@ Bot desenvolvido para funções básicas de uso, como por exemplo Embeds demonst
 
 ## Implementação para o funcionamento
 
-<h3>1 - Crie uma pasta onde implementará o bot</h3>
-<h3>1.1 - Acesse a pasta `cd sua_pasta` e clone o projeto</h3>
+1 - Crie uma pasta onde implementará o bot
+1.1 - Acesse a pasta `cd sua_pasta` e clone o projeto
 
 ```
 git clone https://github.com/IsraelBryan/BOTLUNAR.git
