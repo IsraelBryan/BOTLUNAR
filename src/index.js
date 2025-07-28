@@ -7,13 +7,13 @@ const { TOKEN } = process.env
 const fs = require("node:fs");
 const path = require("node:path");
 const keep_alive = require("./keep_alive");
-const config = require("./config.json");
+const config = require("../config.json");
 client.commands = new Collection()
 const { GUILD_ID } = process.env;
 const deploy_commands = require('./deploy-commands');
 
 
-//Importações
+
 const commandsPath = path.join(__dirname, "commands")
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith(".js"))
 console.log(commandFiles)
