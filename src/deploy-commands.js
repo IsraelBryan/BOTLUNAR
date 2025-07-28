@@ -8,14 +8,14 @@ const { TOKEN, CLIENT_ID, GUILD_ID } = process.env
 //Importações
 const fs = require("node:fs");
 const path = require("node:path");
-const commandsPath = path.join(__dirname, "commands")
+const commandsPath = path.join(__dirname, "../commands")
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith(".js"))
 console.log(commandFiles)
 
 const commands = []
 
 for (const file of commandFiles) {
-    const command = require(`./commands/${file}`)
+    const command = require(`../commands/${file}`)
     commands.push(command.data.toJSON())
 }
 
@@ -26,13 +26,13 @@ const rest = new REST({ version: "10" }).setToken(TOKEN);
 
 (async () => {
     try {
-        console.log(`Resetando ${commands.length} comandinhos`)
+        console.log(`Resetando ${commands.length} comandos`)
 
         const data = await rest.put(
             Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID),
             { body: commands }
         )
-        console.log("Comandos registradinhos~")
+        console.log("Comandos registrados")
     } catch (error) {
         console.error(error)
     }
